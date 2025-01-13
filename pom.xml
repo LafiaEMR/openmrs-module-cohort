@@ -4,7 +4,7 @@
 
     <groupId>org.openmrs.module</groupId>
     <artifactId>cohort</artifactId>
-    <version>3.7.4-SNAPSHOT</version>
+    <version>3.7.4-lafia</version>
     <packaging>pom</packaging>
     <name>Cohort Module</name>
     <description>Module to support Cohort-level encounters and observations and to create these encounters via a REST
