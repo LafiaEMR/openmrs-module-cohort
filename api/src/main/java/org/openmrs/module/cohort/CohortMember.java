@@ -38,7 +38,7 @@ public class CohortMember extends BaseCustomizableData<CohortMemberAttribute> {
 	}
 	
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "cohort_member_id")
 	private Integer cohortMemberId;
 	

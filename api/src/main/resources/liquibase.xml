@@ -120,23 +120,23 @@
     <changeSet id="cohortmodul1065_startDate" author="sharon">
         <preConditions onFail="MARK_RAN">
             <not>
-                <columnExists tableName="cohort" columnName="startDate"/>
+                <columnExists tableName="cohort" columnName="start_date"/>
             </not>
         </preConditions>
         <comment>Creating a start_date column</comment>
         <addColumn tableName="cohort">
-            <column name="startDate" type="datetime" defaultValue="null"/>
+            <column name="start_date" type="datetime" defaultValue="null"/>
         </addColumn>
     </changeSet>
     <changeSet id="cohortmodul1065_endDate" author="sharon">
         <preConditions onFail="MARK_RAN">
             <not>
-                <columnExists tableName="cohort" columnName="endDate"/>
+                <columnExists tableName="cohort" columnName="end_date"/>
             </not>
         </preConditions>
         <comment>Creating a end_date column</comment>
         <addColumn tableName="cohort">
-            <column name="endDate" type="datetime" defaultValue="null"/>
+            <column name="end_date" type="datetime" defaultValue="null"/>
         </addColumn>
     </changeSet>
     <changeSet id="cohortmodul1065_is_group_cohort" author="sharon">

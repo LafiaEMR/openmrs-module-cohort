@@ -15,9 +15,10 @@
 <hibernate-mapping package="org.openmrs.module.cohort">
     <class name="CohortMemberAttribute" table="cohort_member_attribute">
         <id name="id" type="int" column="cohort_member_attribute_id">
-            <generator class="sequence">
-                <param name="sequence">cohort_member_attribute_id_seq</param>
-            </generator>
+<!--            <generator class="sequence">-->
+<!--                <param name="sequence">cohort_member_attribute_id_seq</param>-->
+<!--            </generator>-->
+            <generator class="identity"/>
         </id>
         <many-to-one name="cohortMember" class="CohortMember" not-null="true" column="cohort_member_id" />
         <many-to-one name="attributeType" class="CohortMemberAttributeType" not-null="true" column="attribute_type_id" />

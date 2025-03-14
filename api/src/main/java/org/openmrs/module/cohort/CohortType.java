@@ -25,7 +25,7 @@ public class CohortType extends BaseOpenmrsData {
 	private static final long serialVersionUID = 1L;
 	
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "cohort_type_id")
 	private int cohortTypeId;
 	

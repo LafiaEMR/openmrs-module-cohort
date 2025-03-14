@@ -55,7 +55,7 @@ public class CohortM extends BaseCustomizableData<CohortAttribute> implements Au
 	}
 	
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "cohort_id")
 	private Integer cohortId;
 	
@@ -67,8 +67,10 @@ public class CohortM extends BaseCustomizableData<CohortAttribute> implements Au
 	@JoinColumn(name = "location_id")
 	private Location location;
 	
+	@Column(name = "start_date")
 	private Date startDate;
 	
+	@Column(name = "end_date")
 	private Date endDate;
 	
 	@ManyToOne(cascade = CascadeType.ALL)
